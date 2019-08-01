@@ -20,7 +20,7 @@ class PublicController extends AbstractController
      */
     public function produits()
     {
-        return $this->render('public/index.html.twig');
+        return $this->render('produits/produits.html.twig');
     }
 
     /**
@@ -28,6 +28,14 @@ class PublicController extends AbstractController
      */
     public function produit()
     {
-        return $this->render('public/index.html.twig');
+        return $this->render('produits/produit_one.html.twig');
+    }
+
+    /**
+     * @Route("/panier", name="app_panier")
+     */
+    public function panier()
+    {
+        return $this->render('panier/panier.html.twig');
     }
 }
