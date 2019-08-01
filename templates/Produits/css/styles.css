@@ -1,0 +1,281 @@
+/* STYLES GENERAUX */
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%; /* Used to enable scrolling */
+    font-family: 'Barlow', sans-serif;
+    color: #000b10;
+    font: 100%;
+  }
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    #navigation_mobile, #mobile {
+        display:none;
+    
+    }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait landscape) {
+  
+  /* //CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+#navigation_mobile, #mobile {
+    display:none;
+}
+  
+}
+
+/* HEADER */
+
+.identite_visuelle {
+    width:210px;
+    min-height: 10px;
+}
+
+.accroche {
+    width:250px;
+    min-height: 10px;
+}
+
+#menu-cat.li {
+    list-style-type: none;
+
+}
+
+/* NAVBAR */
+
+#navigation_mobile a {
+  background-color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+/* fin résultats */
+
+/* page produit seul */
+img {
+    width:100%;
+   align-content:center;
+}
+
+
+li.left {
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+    padding: 0;
+}
+
+li.right {
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    padding: 0;
+}
+
+a {
+    color: #000b10;
+}
+
+.navbar {
+    font-size: 1.3em;
+    margin-top: 50px;
+}
+
+.baseline {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT */
+
+.selected_products {
+    width: 400px;
+}
+
+.titre_produit {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.prix {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quantity-right-plus, .quantity-left-minus{
+    color: black;
+    background: none;
+}
+
+#quantity {
+    width: 40px;
+}
+
+.bouton_val{
+    border-width: 2px;
+    background-color: none;
+    width: 190px;
+}
+
+span.whishlist {
+    background: url(../../img/coeur_wishlist.svg) center center / 40px no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color:transparent;
+}
+
+.cara_butn_1, .cara_butn_2, .cara_butn_3{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000b10;
+}
+
+h1.title{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000b10;
+}
+
+
+.nameproduct {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+}
+
+.brand {
+    font-weight: bold;
+}
+.price {
+    font-weight: bold;
+    font-size: 20px,
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 250px;
+    background-color: #f9f5fa;
+}
+
+input {
+    font-weight: bold;
+    border-color: #000b10;
+    background: none;
+    font-size: 19px;
+    height: 35px;
+    border-width: 2px;
+    width: 300px;
+}
+
+/* input section adresse panier */
+
+input[type="checkbox"] {
+    height:10px;
+    width: 10px;
+}
+
+.rule {
+    font-style: italic;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+
+ul.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navfooter {
+    margin-top: 40px;
+}
+
+/* QUICKVIEW */
+
+#produit_img {
+    width:100%;
+    align-content:center;
+
+}
+.parent {
+    position:relative;
+
+}
+.parent:hover button {
+    opacity: 1;
+}
+
+.parent {
+    position:relative;
+}
+
+.quickview {
+    position: absolute;
+    opacity: 1;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-color: #000b10;
+    border-radius: 0;
+    background-color: rgba(249, 245, 250, 0.5);
+    font-size: 20px;
+    opacity: 0;
+    color: #000b10;
+}
+
+.fermer {
+    border-width: 2px;
+    border-color: #000b10;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.quickview:hover {
+    opacity: 0.8;
+    color: #000b10;
+}
+
+/* POPUP */
+
+#quickview_popup {
+    background-color : rgb(242, 189, 222);
+    width: 75vw;
+    display: none;
+}
