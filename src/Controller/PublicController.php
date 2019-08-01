@@ -38,4 +38,12 @@ class PublicController extends AbstractController
     {
         return $this->render('panier/panier.html.twig');
     }
+
+    /**
+     * @Route("/connexion", name="app_connexion")
+     */
+    public function connexion()
+    {
+        return $this->render('connexion/connexion.html.twig');
+    }
 }
